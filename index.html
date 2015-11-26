@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+              
+        <title>DiagramPol</title>
+        
+    </head>
+    <body>
+        <header>
+            <h1 align="left">DiagramPol</h1>
+			<link rel= stylesheet type= text/css href=css/bootstrap-theme.css">
+			<link rel= stylesheet type= text/css href=css/bootstrap-theme.min.css>
+			<link rel= stylesheet type= text/css href=css/bootstrap.min.css>
+			<link rel= stylesheet type= text/css href=css/bootstrap.css>
+		</header>
+            <nav>
+				<form>
+						
+						<div>
+							<label>Usuario:</label>
+							
+							<div >
+								<input
+									type="text"
+									pattern="^[a-zA-Z]{1,}$"
+									required
+									title="Usuario de correo @espol.edu.ec"
+									placeholder="Usuario de Espol"
+									name="username"
+									autocomplete="on"
+									autofocus>
+								<span>@espol.edu.ec</span>
+							</div>
+						</div>
+						<div >
+							<label>Contraseña:</label>
+							<div>
+								
+								<input
+									type="password"
+									pattern="^((?=.*[a-z])(?=.+[A-Z])(?=.+\d).{6,12})$"
+									required
+									title="Contraseña"
+									placeholder="Contraseña Diagram-POL"
+									name="current_password"
+									autocomplete="on">
+								</div>
+						</div>
+						<div >
+							
+							<button type="submit" class="btn-primary">
+								Ingresar
+							</button>
+						</div>
+					</form>
+
+
+			</nav>
+
+		<section>
+
+			<div>
+
+
+						<div>
+
+							<h1>Abre una cuenta</h1>
+							<p>¡Disfruta Diagramando!</p>
+							<hr>
+							<form >
+								<div >
+									<label >Usuario:</label>
+
+
+										<input
+											type="text"
+											pattern="^[a-zA-Z]{1,}$"
+											required
+											title="Usuario de correo @espol.edu.ec"
+											placeholder="Usuario de Espol"
+											name="username"
+											autocomplete="on">
+
+									</div>
+
+								<div >
+									<label >Contraseña:</label>
+
+										<input
+											type="password"
+											pattern="^((?=.*[a-z])(?=.+[A-Z])(?=.+\d).{6,12})$"
+											required
+											title="Debe tener al menos un numero y una mayúscula, mínimo 6 caracteres, máximo 12"
+											placeholder="Su contraseña de Diagram-Pol"
+											name="current_password"
+											autocomplete="on">
+
+								</div>
+
+									
+									<button type="submit" class="btn-primary">
+										 Registrar
+									</button>
+
+							</form>
+						</div>
+			</div>
+					
+
+		</section>
+        
+       
+        <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
+    </body>
+</html>
