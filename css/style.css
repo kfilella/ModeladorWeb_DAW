@@ -1,24 +1,32 @@
-.draggable { 
-	width: 100px; 
-	height: 100px; 
-	background: aquamarine; 
-}
-
-.draggableElement { 
-	width: 100px; 
-	height: 100px; 
-	background: red;
-}
-
-.draggableHelper { 
-	width: 100px; 
-	height: 100px; 
-	background: blue; 
-}
-
 #droppable { 
 	width: 300; 
 	height: 300px; 
 	margin-left: 100px; 
 	background: yellow; 
+}
+
+#drag1 {
+	width: 100px; 
+	height: 100px; 
+	background: aquamarine; 
+}
+
+#drag2 {
+	width: 100px; 
+	height: 100px; 
+	background: red;
+}
+
+.dragged1 {
+	position:absolute; 
+	background: aquamarine;
+	width: 100px;
+	height: 100px;
+}
+
+.dragged2 {
+	position:absolute; 
+	background: red;
+	width: 100px;
+	height: 100px;
 }

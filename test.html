@@ -3,38 +3,24 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-              
-        <title>DiagramPol</title>
-    </head>
-    <body>
-        <header>
-			<link rel= stylesheet type= text/css href=css/bootstrap-theme.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap-theme.min.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap.min.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap.css>
-		</header>
-            <nav>
-			</nav>
-		<section>
-			<div class="draggable">
-				<p>Me puedo mover :)</p>
-			</div>
-			<div class="draggableElement">
-				<p>Se mueve mi clon</p>
-			</div>
-			<div id="droppable" class="ui-widget-header">
-				<p>Esperando objeto</p>
-			</div>
-		</section>
-        
-       
-        <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
-        <script src="js/jquery-1.11.3.js" ></script>
+	    <script src="js/jquery-1.11.3.js" ></script>
         <script src="js/bootstrap.js" ></script>
         <script src="js/bootstrap.min.js" ></script>
         <script src="js/script.js" ></script>
         <script src="js/jquery-ui.js" ></script>
         <link rel="stylesheet" href="css/style.css"/>
         <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript">
+		    google.load("jquery", "1.4.2");
+			google.load("jqueryui", "1.7.2");
+		</script>
+        <title>DiagramPol</title>
+    </head>
+	 <body>
+				<div id="drag1" class="drag">Objeto 1</div> <!-- end of drag1 -->
+				<div id="drag2" class="drag">Objeto 2</div> <!-- end of drag2 -->
+			<div id="droppable">Drop aqui</div><!-- end of frame -->
+        <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
     </body>
 </html>
