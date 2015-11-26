@@ -1,0 +1,24 @@
+.draggable { 
+	width: 100px; 
+	height: 100px; 
+	background: aquamarine; 
+}
+
+.draggableElement { 
+	width: 100px; 
+	height: 100px; 
+	background: red;
+}
+
+.draggableHelper { 
+	width: 100px; 
+	height: 100px; 
+	background: blue; 
+}
+
+#droppable { 
+	width: 300; 
+	height: 300px; 
+	margin-left: 100px; 
+	background: yellow; 
+}
