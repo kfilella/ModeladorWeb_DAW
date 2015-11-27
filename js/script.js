@@ -26,7 +26,7 @@ $(document).ready(function() {
         $(objName).addClass("hide"+counter);
     	$(".hide"+counter).mousedown(function(e){
 	       if( e.button == 1 ) { 
-	      		$(this).hide();
+	      		$(this).fadeOut();
 	      		return false; 
 	    	} 
 	    	return true; 
