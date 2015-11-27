@@ -22,6 +22,15 @@ $(document).ready(function() {
                 console.log(pos.top)
             }
         });
+        //objeto desaparece cuando aplasto rueda del mouse
+        $(objName).addClass("hide"+counter);
+    	$(".hide"+counter).mousedown(function(e){
+	       if( e.button == 1 ) { 
+	      		$(this).hide();
+	      		return false; 
+	    	} 
+	    	return true; 
+	 	}); 
     }
   });
 	$("#droppable").droppable({
@@ -41,7 +50,9 @@ $(document).ready(function() {
 				console.log(itemDragged)
 
 				$("#clonediv"+counter).addClass(itemDragged);
+				//$("#clonediv"+counter).addClass("hideable"+counter);
 			}
 		}
 	});
+    
 });
