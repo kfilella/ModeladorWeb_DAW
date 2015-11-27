@@ -5,22 +5,27 @@
         <meta charset="utf-8" />
               
         <title>DiagramPol</title>
+        
     </head>
-    <body>
+    <body  background="img/der3.jpg">
         <header>
-            <h1 align="left">DiagramPol</h1>
-			<link rel= stylesheet type= text/css href=css/bootstrap-theme.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap-theme.min.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap.min.css>
-			<link rel= stylesheet type= text/css href=css/bootstrap.css>
+            <h1>Diagram-Pol</h1>
+
+			<link rel="stylesheet" href="css/bootstrap-spacelab.min.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel= stylesheet  href=css/bootstrap-theme.css">
+			<link rel= stylesheet  href=css/bootstrap-theme.min.css>
+			<link rel= stylesheet  href=css/bootstrap.min.css>
+			<link rel= stylesheet  href=css/bootstrap.css>
+			<link rel="stylesheet" href="css/styles.css">
 		</header>
-            <nav>
-				<form>
-						
-						<div>
+            <nav class="navbar navbar-default">
+				<form class="navbar-form navbar-right">
+
+						<div class="form-group">
 							<label>Usuario:</label>
-							
-							<div >
+
+							<div class="input-group">
 								<input
 									type="text"
 									pattern="^[a-zA-Z]{1,}$"
@@ -33,10 +38,10 @@
 								<span>@espol.edu.ec</span>
 							</div>
 						</div>
-						<div >
+						<div class="form-group">
 							<label>Contraseña:</label>
-							<div>
-								
+							<div class="input-group">
+
 								<input
 									type="password"
 									pattern="^((?=.*[a-z])(?=.+[A-Z])(?=.+\d).{6,12})$"
@@ -47,7 +52,8 @@
 									autocomplete="on">
 								</div>
 						</div>
-						<div >
+						<div class="form-group">
+
 							<button type="submit" class="btn-primary">
 								Ingresar
 							</button>
@@ -58,20 +64,18 @@
 			</nav>
 
 		<section>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 col-sm-12 pull-right">
+					<div class="sign-up-wrapper wrapper-background2">
 
-			<div>
-
-
-						<div id="frame">
-
-							<h1>Abre una cuenta</h1>
-							<!-- ejemplito draggable con jquery !-->
+							<h1>Registrate !!</h1>
 							<p>¡Disfruta Diagramando!</p>
 							<hr>
 							<form >
-								<div >
+								<div class="form-group" >
 									<label >Usuario:</label>
-
+									<div class="input-group">
 
 										<input
 											type="text"
@@ -81,12 +85,12 @@
 											placeholder="Usuario de Espol"
 											name="username"
 											autocomplete="on">
-
+									</div>
 									</div>
 
-								<div >
+								<div class="form-group">
 									<label >Contraseña:</label>
-
+									<div class="input-group">
 										<input
 											type="password"
 											pattern="^((?=.*[a-z])(?=.+[A-Z])(?=.+\d).{6,12})$"
@@ -95,34 +99,25 @@
 											placeholder="Su contraseña de Diagram-Pol"
 											name="current_password"
 											autocomplete="on">
-
+									</div>
 								</div>
 
-									
+								<div class="form-group">
 									<button type="submit" class="btn-primary">
 										 Registrar
 									</button>
-									
-									<!-- ejemplo de draggable con jquery
-								<div class="draggableElement"><p>Me puedo mover :)</p></div>
-								<div class="draggable"><p>Yo tambien me puedo mover lol</p></div>
-								<div id="droppable"><p>Arrastrar aqui</p></div>
-								 !-->
+								</div>
 							</form>
 						</div>
+			   </div>
 			</div>
-					
+		</div>
 
 		</section>
-        
-       
-        <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
-        <script src="js/jquery-1.11.3.js" ></script>
-        <script src="js/bootstrap.js" ></script>
-        <script src="js/bootstrap.min.js" ></script>
-        <script src="js/script.js" ></script>
-        <script src="js/jquery-ui.js" ></script>
-        <link rel="stylesheet" href="css/style.css"/>
-        <link rel="stylesheet" href="css/bootstrap.css"/>
+
+
+
+
+		<script src="js/bootstrap.min.js"></script>
     </body>
 </html>
