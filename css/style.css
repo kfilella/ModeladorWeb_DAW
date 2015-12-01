@@ -1,32 +1,45 @@
-#droppable { 
-	width: 300; 
-	height: 300px; 
-	margin-left: 100px; 
-	background: yellow; 
+#canvas { 
+	width: 1920px; 
+	height: 1280px; 
+	background: #808080;
+	margin-left: 200px;
+	z-index: -1; 
+	float: left;
+}
+
+#palette{
+	width: 200px;
+	height: 1280px;
+	z-index: -1;
+	background: #505050;
 }
 
 #drag1 {
-	width: 100px; 
-	height: 100px; 
-	background: aquamarine; 
+	position: absolute;
+	left: 10px;
+	top: 100px;
 }
 
 #drag2 {
-	width: 100px; 
-	height: 100px; 
-	background: red;
+	position: absolute;
+	left: 10px;
+	top: 210px;
+}
+
+#drag3 {
+	position: absolute;
+	left: 10px;
+	top: 320px;
 }
 
 .dragged1 {
 	position:absolute; 
-	background: aquamarine;
-	width: 100px;
-	height: 100px;
 }
 
 .dragged2 {
 	position:absolute; 
-	background: red;
-	width: 100px;
-	height: 100px;
+}
+
+.dragged3 {
+	position:absolute; 
 }

@@ -18,9 +18,24 @@
         <title>DiagramPol</title>
     </head>
 	 <body>
-				<div id="drag1" class="drag">Objeto 1</div> <!-- end of drag1 -->
-				<div id="drag2" class="drag">Objeto 2</div> <!-- end of drag2 -->
-			<div id="droppable">Drop aqui</div><!-- end of frame -->
+			<div id="drag1" class="drag" name="rectangulo">
+                <svg width="150" height="100">
+                    <rect class="objeto" style="fill:rgb(200,0,255);stroke-width:6;stroke:black"/>
+                </svg> <!-- end of drag1 -->
+            </div>
+			<div id="drag2" class="drag" name="rombo">
+                <svg height="100" width="100">
+                    <polygon points="50,0 0,50 50,100 100,50" style="fill:lime;stroke:black;stroke-width:3" />
+                </svg>
+            </div> <!-- end of drag2 -->
+            <div id="drag3" class="drag" name="elipse">
+                <svg height="90" width="150">
+                    <ellipse cx="75" cy="45" rx="70" ry="40" style="fill:yellow;stroke:black;stroke-width:3" />
+                </svg>
+            </div> <!-- end of drag2 -->
+			<div id="canvas"></div><!-- end of frame -->
+            <div id="palette"></div><!-- end of frame -->
         <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
+        
     </body>
 </html>
