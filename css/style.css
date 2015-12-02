@@ -3,30 +3,36 @@
 	height: 1280px; 
 	background: #808080;
 	margin-left: 200px;
-	z-index: -1; 
 	float: left;
 }
 
+#import{
+}
 #palette{
 	width: 200px;
 	height: 1280px;
-	z-index: -1;
 	background: #505050;
 }
 
-#drag1 {
+#btnLoad{
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+#objeto1 {
 	position: absolute;
 	left: 10px;
 	top: 100px;
 }
 
-#drag2 {
+#objeto2 {
 	position: absolute;
 	left: 10px;
 	top: 210px;
 }
 
-#drag3 {
+#objeto3 {
 	position: absolute;
 	left: 10px;
 	top: 320px;

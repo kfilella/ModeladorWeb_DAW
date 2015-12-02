@@ -1,17 +1,38 @@
 $(document).ready(function() {
-	objetos = 0;
-
-	$('.objeto').width($('.objeto').parent().width());
-	$('.objeto').height($('.objeto').parent().height());
+	objetos = 0; //numero de objetos arrastrables de paleta
+	loads = 0; //numero de cargas de archivo SVG
+	idLoad = "import"; //se usa para generar un ID para los objetos SVG
+	
+	$('.rectangulo').width($('.rectangulo').parent().width());
+	$('.rectangulo').height($('.rectangulo').parent().height());
 	$(".resizable").resizable();
 
+	//boton se encarga de cargar un archivo SVG
+	$('#btnLoad').click(function(){
+		idLoads = idLoad+loads;
+		$('#canvas').append('<div id="'+idLoads+'"></div>'); //creo el div que envuelve al SVG importado
+        $("#"+idLoads).load("1.svg"); //cargo SVG en el div
+        $("#"+idLoads).draggable({ //hago arrastrable al SVG
+ 		containment: 'canvas'
+ 		});
+        loads++;
+        $("#"+idLoads).mousedown(function(e){ //SVG desaparece con rueda del mouse
+	       if( e.button == 1 ) { 
+	      		$(this).fadeOut();
+	      		return false; 
+	    	} 
+	    	return true; 
+ 		}); 
+    });
+ 	
+ 	//clase drag hace a los elementos arrastrables
   	$('.drag').draggable( {
 	    containment: 'canvas',
 	    helper: 'clone',
 	    stop:function(ev, ui) {
 	    	var pos=$(ui.helper).offset();
 	    	//console.log(ui.helper);
-	    	nombre = "#clone"+objetos
+	    	nombre = "#clone"+objetos; //genero un ID para los clones arrastrables
 	    	console.log(nombre);
 	    	$(nombre).css({"left":pos.left,"top":pos.top});
 	    	$(nombre).removeClass("drag");
@@ -38,11 +59,11 @@ $(document).ready(function() {
 		 	}); 
 	    }
 	});
-
+  	//hace que el canvas admita objetos arrastrables
 	$("#canvas").droppable({
 		drop: function(ev, ui) {
 			console.log(ui.helper);
-			if (ui.helper.attr('id').search(/drag[0-9]/) != -1){
+			if (ui.helper.attr('id').search(/objeto[0-9]/) != -1){
 				objetos++;
 				var element=$(ui.draggable).clone();
 				element.addClass("tempclass");
@@ -50,8 +71,7 @@ $(document).ready(function() {
 				$(".tempclass").attr("id","clone"+objetos);
 				$("#clone"+objetos).removeClass("tempclass");
 
-				//Get the dynamically item id
-				draggedNumber = ui.helper.attr('id').search(/drag([0-9])/)
+				draggedNumber = ui.helper.attr('id').search(/objeto([0-9])/)
 				itemDragged = "dragged" + RegExp.$1
 				console.log(itemDragged)
 
