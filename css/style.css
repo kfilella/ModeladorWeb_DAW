@@ -7,6 +7,7 @@
 }
 
 .inline{
+	position:absolute;
 	display: inline-block;
 	overflow: auto;
 }
@@ -19,6 +20,12 @@
 
 #btnLoad{
 	position: absolute;
+	left: 10px;
+	top: 60px;
+}
+
+#txtLoad{
+	position:absolute;
 	left: 10px;
 	top: 10px;
 }

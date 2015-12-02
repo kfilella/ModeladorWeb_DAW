@@ -10,8 +10,13 @@ $(document).ready(function() {
 	//boton se encarga de cargar un archivo SVG
 	$('#btnLoad').click(function(){
 		idLoads = idLoad+loads;
+		svg = $('#txtLoad').val(); //obtengo input del usuario
 		$('#canvas').append('<div id="'+idLoads+'"></div>'); //creo el div que envuelve al SVG importado
-        $("#"+idLoads).load("1.svg"); //cargo SVG en el div
+		$("#"+idLoads).load(svg, function( response, status, xhr ) {
+		  	if ( status == "error" ) {
+		    	alert("File not found");
+		  }
+		}); //cargo SVG en el div
         $("#"+idLoads).addClass("inline");
         $("#"+idLoads).draggable({ //hago arrastrable al SVG
  			containment: 'canvas'
