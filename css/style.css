@@ -16,6 +16,7 @@
 	width: 200px;
 	height: 1280px;
 	background: #505050;
+        border-style: outset;
 }
 
 #btnLoad{
