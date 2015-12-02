@@ -2,7 +2,7 @@ $(document).ready(function() {
 	objetos = 0; //numero de objetos arrastrables de paleta
 	loads = 0; //numero de cargas de archivo SVG
 	idLoad = "import"; //se usa para generar un ID para los objetos SVG
-	
+
 	$('.rectangulo').width($('.rectangulo').parent().width());
 	$('.rectangulo').height($('.rectangulo').parent().height());
 	$(".resizable").resizable();
@@ -12,8 +12,9 @@ $(document).ready(function() {
 		idLoads = idLoad+loads;
 		$('#canvas').append('<div id="'+idLoads+'"></div>'); //creo el div que envuelve al SVG importado
         $("#"+idLoads).load("1.svg"); //cargo SVG en el div
+        $("#"+idLoads).addClass("inline");
         $("#"+idLoads).draggable({ //hago arrastrable al SVG
- 		containment: 'canvas'
+ 			containment: 'canvas'
  		});
         loads++;
         $("#"+idLoads).mousedown(function(e){ //SVG desaparece con rueda del mouse
@@ -22,13 +23,13 @@ $(document).ready(function() {
 	      		return false; 
 	    	} 
 	    	return true; 
- 		}); 
+ 		});
     });
  	
  	//clase drag hace a los elementos arrastrables
   	$('.drag').draggable( {
-	    containment: 'canvas',
-	    helper: 'clone',
+	    containment: 'canvas', //solo son arrastrables dentro del canvas
+	    helper: 'clone', //se genera un clon al arrastrar de la paleta
 	    stop:function(ev, ui) {
 	    	var pos=$(ui.helper).offset();
 	    	//console.log(ui.helper);
@@ -59,6 +60,7 @@ $(document).ready(function() {
 		 	}); 
 	    }
 	});
+
   	//hace que el canvas admita objetos arrastrables
 	$("#canvas").droppable({
 		drop: function(ev, ui) {
@@ -70,13 +72,11 @@ $(document).ready(function() {
 				$(this).append(element);
 				$(".tempclass").attr("id","clone"+objetos);
 				$("#clone"+objetos).removeClass("tempclass");
-
 				draggedNumber = ui.helper.attr('id').search(/objeto([0-9])/)
 				itemDragged = "dragged" + RegExp.$1
 				console.log(itemDragged)
-
 				$("#clone"+objetos).addClass(itemDragged);
-				
+				$("#clone"+objetos).addClass("absolute");
 				//$("#clone"+objetos).addClass("hideable"+objetos);
 			}
 		}

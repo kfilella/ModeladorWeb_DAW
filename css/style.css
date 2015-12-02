@@ -6,8 +6,11 @@
 	float: left;
 }
 
-#import{
+.inline{
+	display: inline-block;
+	overflow: auto;
 }
+
 #palette{
 	width: 200px;
 	height: 1280px;
@@ -39,13 +42,29 @@
 }
 
 .dragged1 {
-	position:absolute; 
+	/*atributos de elemento 1 paleta*/
 }
 
 .dragged2 {
-	position:absolute; 
+	/*atributos de elemento 2 paleta*/
 }
 
 .dragged3 {
-	position:absolute; 
+	/*atributos de elemento 3 paleta*/
+}
+
+.dragged4 {
+	/*atributos de elemento 4 paleta*/
+}
+
+.dragged5 {
+	/*atributos de elemento 5 paleta*/
+}
+
+.dragged6 {
+	/*atributos de elemento 6 paleta*/
+}
+
+.absolute{
+	position: absolute;
 }
