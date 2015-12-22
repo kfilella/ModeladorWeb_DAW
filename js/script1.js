@@ -1,15 +1,5 @@
 $(document).ready(function() {
-	jsPlumb.bind("ready", function() {
-	  jsPlumb.registerConnectionType("example", {
-  paintStyle:{ strokeStyle:"blue", lineWidth:5  },
-  hoverPaintStyle:{ strokeStyle:"red", lineWidth:7 }
-});
 
-var c = jsPlumb.connect({ source:"objeto1", target:"objeto2" });
-c.bind("click", function() {
-  c.setType("example");
-}); 
-	});
 	
 	objetos = 0; //numero de objetos arrastrables de paleta
 	loads = 0; //numero de cargas de archivo SVG
@@ -42,7 +32,7 @@ c.bind("click", function() {
 		  	if ( status == "error" ) {
 		    	alert("File not found");
 		  	}
-	}); //cargo SVG en el div
+		}); //cargo SVG en el div
 	}
 	
 	$('.rectangulo').width($('.rectangulo').parent().width());
