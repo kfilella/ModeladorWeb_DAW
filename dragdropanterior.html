@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+	    <script src="js/jquery-1.11.3.js" ></script>
+        <script src="js/bootstrap.js" ></script>
+        <script src="js/bootstrap.min.js" ></script>
+        <script src="js/script.js" ></script>
+        <script src="js/jquery-ui.js" ></script>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+		<script type="text/javascript">
+		    google.load("jquery", "1.4.2");
+			google.load("jqueryui", "1.7.2");
+		</script>
+        <title>DiagramPol</title>
+    </head>
+	 <body>
+            <input type="text" id="txtLoad" position="absolute" value="Archivo SVG.svg"></input>
+            <button id="btnLoad" class="btn btn-primary">Load</button>
+            <div id="objeto1" class="drag">
+                <svg width="150" height="100">
+                    <rect class="rectangulo" style="fill:rgb(200,0,255);stroke-width:6;stroke:black"/>
+                </svg>
+            </div>
+			<div id="objeto2" class="drag">
+                <svg height="100" width="100">
+                    <polygon points="50,0 0,50 50,100 100,50" style="fill:lime;stroke:black;stroke-width:3" />
+                </svg>
+            </div>
+
+            <div id="objeto3" class="drag">
+                <svg height="90" width="150">
+                    <ellipse cx="75" cy="45" rx="70" ry="40" style="fill:yellow;stroke:black;stroke-width:3" />
+                </svg>
+            </div>
+
+			<div id="canvas">
+                <h4 class="panel panel-default" border-style="outset">Area de dibujo</h4>
+            </div>
+
+            <div id="palette"></div>
+
+        <footer><small>Daw derechos reservados &copy; 2015 </small></footer>
+        
+    </body>
+</html>
