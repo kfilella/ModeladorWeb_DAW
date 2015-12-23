@@ -30,89 +30,34 @@
 	top: 10px;
 }
 
-.Hover { border: 1px solid #F00; }
+.Hover { border: 1px solid #000; }
+
 #objeto1 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 90px;
+	top: 100px;
 }
+
 #objeto2 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 210px;
+	top: 245px;
 }
+
 #objeto3 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 265px;
+	top: 385px;
 }
+
 #objeto4 {
 	background: #fff;
 	position: absolute;
-	left: 50px;
-	top: 265px;
-}
-#objeto5 {
-	background: #fff;
-	position: absolute;
-	left: 90px;
-	top: 265px;
-}
-#objeto6 {
-	background: #fff;
-	position: absolute;
-	left: 130px;
-	top: 265px;
-}
-#objeto7 {
-	background: #fff;
-	position: absolute;
-	left: 170px;
-	top: 265px;
-}
-#objeto8 {
-	background: #fff;
-	position: absolute;
-	left: 210px;
-	top: 265px;
-}
-#objeto9 {
-	background: #fff;
-	position: absolute;
 	left: 10px;
-	top: 315px;
-}
-#objeto10 {
-	background: #fff;
-	position: absolute;
-	left: 50px;
-	top: 315px;
-}
-#objeto11 {
-	background: #fff;
-	position: absolute;
-	left: 90px;
-	top: 315px;
-}
-#objeto12 {
-	background: #fff;
-	position: absolute;
-	left: 10px;
-	top: 365px;
-}
-#objeto13 {
-	background: #fff;
-	position: absolute;
-	left: 10px;
-	top: 475px;
-}
-#objeto14 {
-	position: absolute;
-	left: 10px;
-	top: 585px;
+	top: 455px;
 }
 
 .dragged1 {
@@ -154,4 +99,35 @@
 
 .pocultar{
 	display:none;
+}
+
+.documento{
+	display:inline-block;
+	border:5px solid #68b3f6;
+	height:200px;
+	width:200px;
+	background-color: white;
+	margin:40px 20px 20px 40px;
+	background-image: url(../img/docu.jpg);
+
+}
+.documentoc{
+	display:inline-block;
+	border:5px solid #68b3f6;
+	height:200px;
+	width:200px;
+	background-color: white;
+	margin:40px 20px 20px 40px;
+	background-image: url(../img/docuc.jpg);
+
+}
+
+.documento:hover{
+	border:8px solid #eb9316;
+	background-image: url(../img/docutituu.jpg);
+}
+
+.documentoc:hover{
+	border:8px solid #eb9316;
+	background-image: url(../img/docuct.jpg);
 }
