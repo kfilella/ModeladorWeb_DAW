@@ -31,33 +31,83 @@
 }
 
 .Hover { border: 1px solid #000; }
-
 #objeto1 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 100px;
+	top: 90px;
 }
-
 #objeto2 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 245px;
+	top: 210px;
 }
-
 #objeto3 {
 	background: #fff;
 	position: absolute;
 	left: 10px;
-	top: 385px;
+	top: 265px;
 }
-
 #objeto4 {
 	background: #fff;
 	position: absolute;
+	left: 50px;
+	top: 265px;
+}
+#objeto5 {
+	background: #fff;
+	position: absolute;
+	left: 90px;
+	top: 265px;
+}
+#objeto6 {
+	background: #fff;
+	position: absolute;
+	left: 130px;
+	top: 265px;
+}
+#objeto7 {
+	background: #fff;
+	position: absolute;
+	left: 170px;
+	top: 265px;
+}
+#objeto8 {
+	background: #fff;
+	position: absolute;
+	left: 210px;
+	top: 265px;
+}
+#objeto9 {
+	background: #fff;
+	position: absolute;
 	left: 10px;
-	top: 455px;
+	top: 315px;
+}
+#objeto10 {
+	background: #fff;
+	position: absolute;
+	left: 50px;
+	top: 315px;
+}
+#objeto11 {
+	background: #fff;
+	position: absolute;
+	left: 90px;
+	top: 315px;
+}
+#objeto12 {
+	background: #fff;
+	position: absolute;
+	left: 10px;
+	top: 365px;
+}
+#objeto13 {
+	background: #fff;
+	position: absolute;
+	left: 10px;
+	top: 475px;
 }
 
 .dragged1 {

@@ -1,42 +1,23 @@
 $(document).ready(function() {
+	var rotate=0;
 
-	
 	objetos = 0; //numero de objetos arrastrables de paleta
 	loads = 0; //numero de cargas de archivo SVG
 	idLoad = "import"; //se usa para generar un ID para los objetos SVG
-	/*$.contextMenu({
-	            selector: '.context-menu-one', 
-	            callback: function(key, options) {
-	                var m = "clicked: " + key;
-	                window.console && console.log(m) || alert(m); 
-	            },
-	            items: {
-	                "edit": {name: "Edit", icon: "edit"},
-	                "cut": {name: "Cut", icon: "cut"},
-	               copy: {name: "Copy", icon: "copy"},
-	                "paste": {name: "Paste", icon: "paste"},
-	                "delete": {name: "Delete", icon: "delete"},
-	                "sep1": "---------",
-	                "quit": {name: "Quit", icon: function(){
-	                    return 'context-menu-icon context-menu-icon-quit';
-	                }}
-	            }
-	        });
 
-	        $('.context-menu-one').on('click', function(e){
-	            console.log('clicked', this);
-    })*/
 	var i=0;
-	for (i=0; i<=3; i++){
+	for (i=0; i<=20; i++){
 		$("#objeto"+i).load("svg/"+i+".svg", function( response, status, xhr ) {
 		  	if ( status == "error" ) {
 		    	alert("File not found");
 		  	}
 		}); //cargo SVG en el div
+	    $("#objeto"+i).hover(
+	        function() { $(this).addClass("Hover"); },
+	        function() { $(this).removeClass("Hover"); }
+	    );
+
 	}
-	
-	$('.rectangulo').width($('.rectangulo').parent().width());
-	$('.rectangulo').height($('.rectangulo').parent().height());
 
 	//boton se encarga de cargar un archivo SVG
 	$('#btnLoad').click(function(){
@@ -89,6 +70,13 @@ $(document).ready(function() {
 
 	        //objeto desaparece cuando aplasto rueda del mouse
 	        $(nombre).addClass("hide"+objetos);
+	        $(nombre).addClass("rotate");
+	        $(".rotate").click(function(event) {
+			    if (event.shiftKey) {
+			    	rotate += 90;
+			        $(this).rotate(rotate);
+			    } 
+			});
 	    	$(".hide"+objetos).mousedown(function(e){
 		       	if( e.button == 1 ) { 
 		      		$(this).fadeOut();
@@ -96,6 +84,7 @@ $(document).ready(function() {
 		    	} 
 		    	return true; 
 		 	}); 
+
 	    }
 	});
 

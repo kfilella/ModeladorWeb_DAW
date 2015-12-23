@@ -1,20 +1,8 @@
-<?xml version="1.0" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
- "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
-<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
- width="126.000000pt" height="97.000000pt" viewBox="0 0 126.000000 97.000000"
- preserveAspectRatio="xMidYMid meet">
-<metadata>
-Created by potrace 1.13, written by Peter Selinger 2001-2015
-</metadata>
-<g transform="translate(0.000000,97.000000) scale(0.100000,-0.100000)"
-fill="#000000" stroke="none">
-<path d="M47 932 c-15 -17 -17 -62 -17 -444 0 -399 1 -426 18 -441 17 -15 73
--17 594 -17 544 0 576 1 591 18 15 17 17 62 17 444 0 399 -1 426 -18 441 -17
-15 -73 17 -594 17 -544 0 -576 -1 -591 -18z m1178 -442 l0 -435 -585 0 -585 0
--3 425 c-1 234 0 431 3 438 3 10 126 12 587 10 l583 -3 0 -435z"/>
-<path d="M92 888 c-17 -17 -17 -779 0 -796 17 -17 1079 -17 1096 0 17 17 17
-779 0 796 -17 17 -1079 17 -1096 0z m1086 -10 c17 -17 17 -759 0 -776 -17 -17
--1059 -17 -1076 0 -17 17 -17 759 0 776 17 17 1059 17 1076 0z"/>
-</g>
+<svg width="29.999999999999996" height="29.999999999999996" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - http://svg-edit.googlecode.com/ -->
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_14" y2="27.291668" x2="10.039064" y1="2.031251" x1="9.97396" stroke-linecap="null" stroke-linejoin="null" stroke="#000000" fill="none"/>
+  <line id="svg_15" y2="27.291668" x2="20.032553" y1="2.031251" x1="19.967449" stroke-linecap="null" stroke-linejoin="null" stroke="#000000" fill="none"/>
+ </g>
 </svg>
