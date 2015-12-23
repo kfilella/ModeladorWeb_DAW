@@ -5,10 +5,6 @@
 	float: left;
 }
 
-li div{
-	display:inline-block;
-}
-
 .inline{
 	position:absolute;
 	display: inline-block;
