@@ -53,6 +53,13 @@
 	top: 385px;
 }
 
+#objeto4 {
+	background: #fff;
+	position: absolute;
+	left: 10px;
+	top: 455px;
+}
+
 .dragged1 {
 	/*atributos de elemento 1 paleta*/
 }
@@ -79,4 +86,17 @@
 
 .absolute{
 	position: absolute;
+}
+
+#menu-toggle{
+	margin:auto;
+}
+
+
+.pver{
+	display:inline;
+}
+
+.pocultar{
+	display:none;
 }
