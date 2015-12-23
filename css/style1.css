@@ -5,32 +5,32 @@
 	float: left;
 }
 
-.inline{
+.inline {
 	position:absolute;
 	display: inline-block;
 	overflow: auto;
 }
 
-#palette{
+#palette {
 	width: 200px;
 	height: 1280px;
 	background: #505050;
-        border-style: outset;
+    border-style: outset;
 }
 
-#btnLoad{
+#btnLoad {
 	position: absolute;
 	left: 10px;
 	top: 60px;
 }
 
-#txtLoad{
+#txtLoad {
 	position:absolute;
 	left: 10px;
 	top: 10px;
 }
 
-.Hover { border: 1px solid #000; }
+.Hover { border: 1px solid #F00; }
 
 #objeto1 {
 	background: #fff;
@@ -43,7 +43,7 @@
 	background: #fff;
 	position: absolute;
 	left: 50px;
-	top: 205px;
+	top: 485px;
 }
 
 #objeto3 {
