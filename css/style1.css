@@ -5,6 +5,10 @@
 	float: left;
 }
 
+li div{
+	display:inline-block;
+}
+
 .inline{
 	position:absolute;
 	display: inline-block;
@@ -35,29 +39,56 @@
 #objeto1 {
 	background: #fff;
 	position: absolute;
-	left: 10px;
-	top: 100px;
+	left: 50px;
+	top: 70px;
 }
 
 #objeto2 {
 	background: #fff;
 	position: absolute;
-	left: 10px;
-	top: 245px;
+	left: 50px;
+	top: 205px;
 }
 
 #objeto3 {
 	background: #fff;
 	position: absolute;
-	left: 10px;
-	top: 385px;
+	left: 5px;
+	top: 205px;
 }
 
 #objeto4 {
 	background: #fff;
 	position: absolute;
-	left: 10px;
-	top: 455px;
+	left: 5px;
+	top: 250px;
+}
+
+#objeto5 {
+	background: #fff;
+	position: absolute;
+	left: 5px;
+	top: 295px;
+}
+
+#objeto6 {
+	background: #fff;
+	position: absolute;
+	left: 5px;
+	top: 340px;
+}
+#objeto7 {
+	background: #fff;
+	position: absolute;
+	left: 5px;
+	top: 385px;
+}
+
+#objeto14 {
+	background: #fff;
+	position: absolute;
+	left: 50px;
+	top: 250px;
 }
 
 .dragged1 {
