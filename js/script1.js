@@ -6,7 +6,7 @@ $(document).ready(function() {
 	idLoad = "import"; //se usa para generar un ID para los objetos SVG
 
 	var i=0;
-	for (i=0; i<=20; i++){
+	for (i=0; i<=13; i++){
 		$("#objeto"+i).load("svg/"+i+".svg", function( response, status, xhr ) {
 		  	if ( status == "error" ) {
 		    	alert("File not found");
@@ -45,6 +45,7 @@ $(document).ready(function() {
  	
  	//clase drag hace a los elementos arrastrables
   	$('.drag').draggable( {
+  		cancel: "",
 	    containment: 'canvas', //solo son arrastrables dentro del canvas
 	    helper: 'clone', //se genera un clon al arrastrar de la paleta
 	    start:function(ev, ui){
@@ -90,6 +91,7 @@ $(document).ready(function() {
 
   	//hace que el canvas admita objetos arrastrables
 	$(".canvas").droppable({
+		cancel: "",
 		drop: function(ev, ui) {
 			console.log(ui.helper);
 			if (ui.helper.attr('id').search(/objeto[0-9]/) != -1){

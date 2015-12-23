@@ -109,6 +109,11 @@
 	left: 10px;
 	top: 475px;
 }
+#objeto14 {
+	position: absolute;
+	left: 10px;
+	top: 585px;
+}
 
 .dragged1 {
 	/*atributos de elemento 1 paleta*/
