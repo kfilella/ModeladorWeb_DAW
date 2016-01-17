@@ -15,23 +15,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('login','UsuarioController@login');
-
-Route::get('nuevo', function () {
-    return view('nuevo');
+Route::get('login', function () {
+    return view('welcome');
 });
 
-Route::get('principal', function () {
-    return view('principal');
-});
+Route::post('login','UsuarioController@loginEspol');
 
-Route::get('compartidos', function () {
-    return view('compartidos');
-});
+Route::get('nuevo','NuevoDocController@indexNuevoDoc');
 
-Route::get('perfil', function () {
-    return view('perfil');
-});
+Route::get('principal', 'UsuarioController@index');
+
+Route::get('compartidos','CompartidosController@indexCompartidos');
+
+Route::get('perfil','UsuarioController@indexPerfil');
+
+Route::get('logout','UsuarioController@logout');
 
 Route::post('registro','UsuarioController@guardar');
 /*

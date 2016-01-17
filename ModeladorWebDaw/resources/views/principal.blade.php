@@ -62,7 +62,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li><a class="page-scroll" href="/perfil">
-                        Bienvenido, {{$user->nombres}}</a></li>
+                        Bienvenido, {{$user}}</a></li>
                 <li>
                     <a class="page-scroll" href="/nuevo"><i class="glyphicon glyphicon-star"></i> Nuevo</a>
                 </li>
@@ -79,7 +79,7 @@
                     <a class="page-scroll" href="/perfil"><i class="glyphicon glyphicon-user"></i> Perfil</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="/"><i class="glyphicon glyphicon-off"></i> Salir</a>
+                    <a class="page-scroll" href="/logout"><i class="glyphicon glyphicon-off"></i> Salir</a>
                 </li>
             </ul>
         </div>
